@@ -2,8 +2,6 @@ package com.cabby.heyCabby.entities;
 
 import com.cabby.heyCabby.entities.enums.Role;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.util.Set;
 

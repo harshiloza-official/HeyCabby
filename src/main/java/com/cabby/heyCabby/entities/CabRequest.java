@@ -4,8 +4,6 @@ package com.cabby.heyCabby.entities;
 import com.cabby.heyCabby.entities.enums.CabRequestStatus;
 import com.cabby.heyCabby.entities.enums.PaymentMethod;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.locationtech.jts.geom.Point;
 

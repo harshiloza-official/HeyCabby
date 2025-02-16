@@ -1,6 +1,5 @@
 package com.cabby.heyCabby.strategies;
 
-import com.cabby.heyCabby.dto.CabRequestDto;
 import com.cabby.heyCabby.entities.CabRequest;
 
 public interface RideFareCalc {

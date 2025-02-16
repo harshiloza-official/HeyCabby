@@ -5,15 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class PassengerDto {
-
-    public PassengerDto(UserDto user, double rating) {
-        this.user = user;
-        this.rating = rating;
-    }
-
-    public PassengerDto() {
-    }
 
     private UserDto user;
     private double rating;

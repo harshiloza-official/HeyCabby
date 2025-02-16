@@ -1,14 +1,8 @@
 package com.cabby.heyCabby.dto;
 
-import com.cabby.heyCabby.entities.Passenger;
 import com.cabby.heyCabby.entities.enums.CabRequestStatus;
 import com.cabby.heyCabby.entities.enums.PaymentMethod;
-import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CreationTimestamp;
-import org.locationtech.jts.geom.Point;
 
 import java.time.LocalDateTime;
 
@@ -28,13 +22,14 @@ public class CabRequestDto {
  public CabRequestDto() {
  }
 
- private Long id;
+    private Long id;
     private PointDto pickUpLocation;
     private PointDto dropOffLocation;
     private LocalDateTime requestedTime;
     private PaymentMethod paymentMethod;
     private CabRequestStatus cabRequestStatus;
     private PassengerDto passengerDto;
+    private Double fare;
 
     public Long getId() {
         return id;

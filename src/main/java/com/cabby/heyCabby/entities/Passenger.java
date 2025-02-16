@@ -1,9 +1,6 @@
 package com.cabby.heyCabby.entities;
 
 import jakarta.persistence.*;
-import lombok.*;
-
-import java.sql.ConnectionBuilder;
 
 @Entity
 public class Passenger {

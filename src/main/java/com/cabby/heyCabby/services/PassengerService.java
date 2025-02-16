@@ -4,7 +4,6 @@ import com.cabby.heyCabby.dto.CabRequestDto;
 import com.cabby.heyCabby.dto.CabbyDto;
 import com.cabby.heyCabby.dto.PassengerDto;
 import com.cabby.heyCabby.dto.RideDto;
-import com.cabby.heyCabby.entities.CabRequest;
 import com.cabby.heyCabby.entities.Passenger;
 import com.cabby.heyCabby.entities.User;
 
@@ -20,4 +19,5 @@ public interface PassengerService {
 
     Passenger createNewPassenger(User user);
 
+    Passenger getCurrentPassenger();
 }

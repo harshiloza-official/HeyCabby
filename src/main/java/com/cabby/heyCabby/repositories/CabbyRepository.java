@@ -14,4 +14,7 @@ public interface CabbyRepository extends JpaRepository<Cabby, Long> {
             "FROM cabby AS c WHERE c.is_available = true AND ST_DWithin(c.current_location,  :pickUpLocation, 10000) " +
             "ORDER BY distance LIMIT 10", nativeQuery = true)
     List<Cabby> findNearestDrivers(Point pickUpLocation);
+
+    @Query(value = "SELECT c.* FROM cabby c WHERE c.is_available = true AND ST_DWithin(c.current_location, :pickUpLocation, 15000) ORDER BY c.rating DESC LIMIT 10", nativeQuery = true)
+    List<Cabby> findNearestTopRatedDrivers(Point pickUpLocation);
 }
