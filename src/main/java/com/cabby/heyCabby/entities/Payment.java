@@ -25,4 +25,16 @@ public class Payment {
 
     @CreationTimestamp
     private LocalDateTime paymentTime;
+
+    public Payment(Long id, PaymentMethod paymentMethod, Ride ride, Double amount, PaymentStatus paymentStatus, LocalDateTime paymentTime) {
+        this.id = id;
+        this.paymentMethod = paymentMethod;
+        this.ride = ride;
+        this.amount = amount;
+        this.paymentStatus = paymentStatus;
+        this.paymentTime = paymentTime;
+    }
+
+    public Payment() {
+    }
 }

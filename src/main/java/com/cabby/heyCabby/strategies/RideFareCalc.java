@@ -1,7 +1,9 @@
 package com.cabby.heyCabby.strategies;
 
 import com.cabby.heyCabby.dto.CabRequestDto;
+import com.cabby.heyCabby.entities.CabRequest;
 
 public interface RideFareCalc {
-    double calculateFare(CabRequestDto cabRequestDto);
+    static final double RIDE_FAIR_MULTIPLIER = 10;
+    double calculateFare(CabRequest cabRequest);
 }

@@ -26,4 +26,6 @@ public class WalletTransaction {
     private Wallet wallet;
     @CreationTimestamp
     private LocalDateTime timeStamp;
+
+
 }
